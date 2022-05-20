@@ -1,0 +1,334 @@
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Mobile Styles */
+
+.wrapper {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+  color: #4e5150;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.userimg-container {
+  width: 140px;
+  margin: 18px auto 10px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.userimg-container img {
+  width: 100%;
+}
+
+.username {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.userlocation {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 4px;
+  color: #a9a9a9;
+}
+
+.social-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.single-item {
+  background-color: #e5e5e5;
+  width: 78px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.single-item__title {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.single-item__value {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.image1 {
+  grid-area: image1;
+}
+.image2 {
+  grid-area: image2;
+}
+.image3 {
+  grid-area: image3;
+}
+.image4 {
+  grid-area: image4;
+}
+.image5 {
+  grid-area: image5;
+}
+.image6 {
+  grid-area: image6;
+}
+
+.img-gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.img-gallery {
+  display: grid;
+  gap: 10px;
+  width: 1fr;
+  grid-template-areas:
+    "image1 image2 image2"
+    "image3 image3 image4"
+    "image5 image6 image4";
+}
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  color: #c4c4c4;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.credits {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 960px;
+  }
+  .userimg-container {
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+  .username {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+  .userlocation {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+  }
+  .social-info {
+    margin-top: 24px;
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+  .single-item:nth-child(2) {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .single-item {
+    height: 67px;
+    width: 100px;
+    border-radius: 12px;
+  }
+
+  .single-item__title {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .single-item__value {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 134px;
+    margin-bottom: 24px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
